@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--spacing-6) 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav ul li {
+    margin-left: var(--spacing-6);
+}
+
+.logo {
+    border-radius: var(--border-radius-large);
+}

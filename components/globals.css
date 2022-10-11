@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Oxygen';
+  src: url('/fonts/Oxygen/oxygen-regular-webfont.woff2') format('woff2'),
+       url('/fonts/Oxygen/oxygen-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oxygen';
+  src: url('/fonts/Oxygen/oxygen-bold-webfont.woff2') format('woff2'),
+       url('/fonts/Oxygen/oxygen-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oxygen';
+  src: url('/fonts/Oxygen/oxygen-light-webfont.woff2') format('woff2'),
+       url('/fonts/Oxygen/oxygen-light-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: url('/fonts/Exo2/exo2-variablefont_wght-webfont.woff2') format('woff2'),
+       url('/fonts/Exo2/exo2-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Exo2';
+  src: url('/fonts/Exo2/exo2-italic-variablefont_wght-webfont.woff2') format('woff2'),
+       url('/fonts/Exo2/exo2-italic-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff2') format('woff2'),
+       url('/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-default: #3270CD;
+  --primary-text: #73B0ED;
+  --gray-100: #0B192D;
+  --gray-200: #0F284D;
+  --gray-700: #ADC6EB;
+  --gray-800: #C0D4F1;
+  --gray-900: #D2E0F4;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 48px;
+  --spacing-8: 64px;
+  --spacing-9: 96px;
+  --spacing-10: 128px;
+
+  --border-radius-small: 2px;
+  --border-radius-default: 5px;
+  --border-radius-large: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Oxygen', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--gray-100);
+  color: var(--gray-900);
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3 {
+  font-family: 'Exo2', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--gray-800);
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
+}
+h3 {
+  font-size: 22px;
+  color: var(--gray-800);
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-5);
+}
+
+code {
+  background-color: var(--gray-200);
+  padding: var(--spacing-1) var(--spacing-2);
+  font-family: 'Inconsolata';
+  border-radius: var(--border-radius-small);
+}
+code[class] {
+  display: block;
+  padding: var(--spacing-4);
+  overflow-x: auto;
+}
+
+img, code[class] {
+  margin: var(--spacing-6) 0;
+  border-radius: var(--border-radius-default);
+  box-shadow: 0 1px 3px black, 0 1px 2px black;
+}
+@media (max-width: 1000px) {
+  img, code[class] {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  img, code[class] {
+    position: relative;
+    left: -150px;
+    width: calc(100% + 300px);
+    max-width: 100vw;
+  }
+}
+
+a {
+  color: var(--primary-text);
+  transition: color 0.2s ease;
+}
+a:focus, a:hover {
+  color: var(--primary-default);
+}
+
+
