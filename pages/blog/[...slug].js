@@ -1,14 +1,13 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import Markdown from 'react-markdown-it';
+import Container from '../../components/Container/Container';
 
 import { getPostBySlug } from '../../lib/posts';
 
 export default function Post({ content, metadata }) {
     return (
-        <div>
+        <Container text>
             <Markdown source={content} options={{ html: true }} />
-        </div>
+        </Container>
     );
 }
 

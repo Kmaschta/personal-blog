@@ -11,9 +11,7 @@ function MyApp({ Component, pageProps }) {
             </Head>
             <Header />
             <main>
-                <Container text>
-                    <Component {...pageProps} />
-                </Container>
+                <Component {...pageProps} />
             </main>
         </>
     );
