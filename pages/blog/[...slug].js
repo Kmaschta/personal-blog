@@ -5,7 +5,7 @@ import 'highlight.js/styles/a11y-dark.css';
 import Markdown from 'react-markdown-it';
 import Container from '../../components/Container/Container';
 
-import { getPostBySlug } from '../../lib/posts';
+import { getAllPostSlugs, getPostBySlug } from '../../lib/posts';
 
 export default function Post({ content, metadata }) {
     useEffect(() => {
@@ -22,10 +22,10 @@ export default function Post({ content, metadata }) {
 }
 
 export async function getStaticPaths() {
+    const paths = getAllPostSlugs().map((slug) => ({ params: { slug } }));
+
     return {
-        paths: [
-            { params: { slug: ['2019', '01', '23', 'https-on-development'] } },
-        ],
+        paths,
         fallback: false,
     };
 }
