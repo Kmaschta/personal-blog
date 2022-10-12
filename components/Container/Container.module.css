@@ -20,3 +20,39 @@
         padding: 0;
     }
 }
+
+.textContainer a:has(img:only-child) {
+    display: block;
+}
+.textContainer img {
+    width: 100%;
+}
+@media (min-width: 1000px) {
+    .textContainer code[class] {
+        position: relative;
+        left: -150px;
+        width: calc(100% + 300px);
+        max-width: 100vw;
+    }
+}
+@supports selector(:has(a)) {
+    @media (min-width: 1000px) {
+        .textContainer a:has(img:only-child),
+        .textContainer p > img {
+            position: relative;
+            left: -150px;
+            width: calc(100% + 300px);
+            max-width: 100vw;
+        }
+    }
+}
+@supports not selector(:has(a)) {
+    @media (min-width: 1000px) {
+        .textContainer img {
+            position: relative;
+            left: -150px;
+            width: calc(100% + 300px);
+            max-width: 100vw;
+        }
+    }
+}

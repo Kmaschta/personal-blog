@@ -51,6 +51,7 @@
   --gray-700: #ADC6EB;
   --gray-800: #C0D4F1;
   --gray-900: #D2E0F4;
+  --black-100: #091220;
 
   --spacing-1: 4px;
   --spacing-2: 8px;
@@ -66,6 +67,10 @@
   --border-radius-small: 2px;
   --border-radius-default: 5px;
   --border-radius-large: 8px;
+
+  --shadow-500: 0 1px 3px var(--black-100), 0 1px 2px var(--black-100);
+
+  --transition-500: 0.2s ease;
 }
 
 * {
@@ -81,6 +86,7 @@ body {
   background-color: var(--gray-100);
   color: var(--gray-900);
   font-size: 20px;
+  overflow-x: hidden;
   overflow-wrap: break-word;
 }
 
@@ -121,25 +127,12 @@ code[class] {
 img, code[class] {
   margin: var(--spacing-6) 0;
   border-radius: var(--border-radius-default);
-  box-shadow: 0 1px 3px black, 0 1px 2px black;
-}
-@media (max-width: 1000px) {
-  img, code[class] {
-    max-width: 100%;
-  }
-}
-@media (min-width: 1000px) {
-  img, code[class] {
-    position: relative;
-    left: -150px;
-    width: calc(100% + 300px);
-    max-width: 100vw;
-  }
+  box-shadow: var(--shadow-500);
 }
 
 a {
   color: var(--primary-text);
-  transition: color 0.2s ease;
+  transition: color var(--transition-500);
 }
 a:focus, a:hover {
   color: var(--primary-default);
