@@ -1,0 +1,49 @@
+.postLink {
+    text-decoration: none;
+    color: var(--gray-900);
+}
+.postLink:hover {
+    color: inherit;
+    color: var(--gray-900);
+}
+
+.post {
+    background-color: var(--gray-200);
+    display: flex;
+    margin: var(--spacing-6) 0;
+    border-radius: var(--border-radius-default);
+    overflow: hidden;
+    box-shadow: var(--shadow-500);
+}
+
+.post code:first-child {
+    padding-left: 0;
+}
+
+@media (max-width: 1000px) {
+    .post {
+        flex-direction: column;
+    }
+}
+
+.postLink:hover .post {
+    box-shadow: var(--shadow-700);
+    transition: box-shadow var(--transition-500);
+}
+
+.postIllustration {
+    flex: 1 0 0;
+    position: relative;
+    min-height: var(--spacing-11);
+}
+.postIllustration img {
+    border-radius: 0;
+}
+
+.postDescription {
+    flex: 2 0 0;
+    padding: var(--spacing-4);
+}
+.postDescription h3 {
+    margin-top: 0;
+}
