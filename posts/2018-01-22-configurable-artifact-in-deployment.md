@@ -4,7 +4,7 @@ author: Kévin Maschtaler
 title: 'Configurable Artifacts: Deploy Code Like a Pro'
 excerpt: 'Configurable artifacts are a deployment method used to ship code to various environments in a single build. Read on to learn how to better automate your deployment.'
 date: '2018-01-22 20:00:00'
-image: /blog/content/partial-deployment-pipeline.png
+image: /content/configurable-artifact-in-deployment/partial-deployment-pipeline.png
 canonical: https://marmelab.com/blog/2018/01/22/configurable-artifact-in-deployment.html
 tags:
     - devops

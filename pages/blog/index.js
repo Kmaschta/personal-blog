@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { getAllPosts } from '../../lib/posts';
 import Container from '../../components/Container/Container';
-import styles from './blog.module.css';
+import Card from '../../components/Card/Card';
 
 export default function Blog({ postsByYear }) {
     return (
@@ -14,35 +13,34 @@ export default function Blog({ postsByYear }) {
                     <div key={year}>
                         <h2>{year}</h2>
                         {posts.map((post) => (
-                            <Link key={post.url} href={post.url}>
-                                <a className={styles.postLink}>
-                                    <article className={styles.post}>
-                                        <div
-                                            className={styles.postIllustration}
-                                        >
-                                            <Image
-                                                src={post.image}
-                                                alt=""
-                                                layout="fill"
-                                                objectFit="cover"
-                                            />
-                                        </div>
-                                        <div className={styles.postDescription}>
-                                            <h3>{post.title}</h3>
-                                            <p>{post.excerpt}</p>
-                                            <div>
-                                                {(post.tags || []).map(
-                                                    (tag) => (
-                                                        <code key={tag}>
-                                                            #{tag}
-                                                        </code>
-                                                    )
-                                                )}
-                                            </div>
-                                        </div>
-                                    </article>
-                                </a>
-                            </Link>
+                            <Card
+                                key={post.url}
+                                title={post.title}
+                                href={post.url}
+                                image={
+                                    <Image
+                                        src={post.image}
+                                        alt=""
+                                        layout="fill"
+                                        objectFit="cover"
+                                    />
+                                }
+                            >
+                                <p>{post.excerpt}</p>
+                                <div>
+                                    <code>
+                                        {new Intl.DateTimeFormat('en-US', {
+                                            dateStyle: 'medium',
+                                        }).format(new Date(post.date))}
+                                    </code>
+                                    {(post.tags || []).length > 0
+                                        ? ' | '
+                                        : null}
+                                    {(post.tags || []).map((tag) => (
+                                        <code key={tag}>#{tag}</code>
+                                    ))}
+                                </div>
+                            </Card>
                         ))}
                     </div>
                 ))}

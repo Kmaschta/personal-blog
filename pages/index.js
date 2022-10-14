@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import Container from '../components/Container/Container';
+
 export default function Home() {
-    return <Link href="/blog/2019/01/23/https-on-development">Post</Link>;
+    return <Container></Container>;
 }

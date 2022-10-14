@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Container from '../Container/Container';
 import styles from './Header.module.css';
+import NavLink from './NavLink';
 
 function Header() {
     return (
@@ -23,21 +24,9 @@ function Header() {
                 </div>
                 <nav className={styles.nav}>
                     <ul>
-                        <li>
-                            <Link href="/">
-                                <a>Home</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/blog">
-                                <a>Blog</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/talks">
-                                <a>Talks</a>
-                            </Link>
-                        </li>
+                        <NavLink href="/">Home</NavLink>
+                        <NavLink href="/blog">Blog</NavLink>
+                        <NavLink href="/talks">Talks</NavLink>
                     </ul>
                 </nav>
             </header>

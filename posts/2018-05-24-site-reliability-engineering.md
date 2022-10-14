@@ -4,7 +4,7 @@ author: Kévin Maschtaler
 title: "Site Reliability Engineering: Google's Secret Sauce For High Availability And Happy Ops"
 excerpt: 'Developers have a lot to learn from the book "Site Reliability Engineering - How Google Runs Production Systems", starting with time management and blameless retrospectives.'
 date: '2018-05-24 20:00:00'
-image: /blog/content/sre-large.png
+image: /content/site-reliability-engineering/sre-large.jpg
 canonical: https://marmelab.com/blog/2018/05/24/site-reliability-engineering.html
 tags:
     - devops

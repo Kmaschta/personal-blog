@@ -3,6 +3,7 @@ layout: post
 author: Kévin Maschtaler
 title: 'WebSocket-based app with Django Channels and React'
 date: '2016-10-16 12:00:00'
+image: /content/websocket-based-app-with-django-channels-and-react/game-of-life.gif
 lang: en
 tag:
     - django

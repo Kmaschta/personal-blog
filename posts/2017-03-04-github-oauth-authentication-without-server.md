@@ -3,6 +3,7 @@ layout: post
 author: Kévin Maschtaler
 title: 'GitHub Oauth authentication for SPA without server'
 date: '2017-03-04 12:00:00'
+image: /content/github-oauth-authentication-without-server/authorization_code_grant.png
 tags:
     - github
     - oauth

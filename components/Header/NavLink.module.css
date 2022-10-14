@@ -1,0 +1,27 @@
+.navLink {
+    margin-left: var(--spacing-6);
+}
+
+.navLink a {
+    text-decoration: none;
+    outline: none;
+    color: var(--gray-900);
+    border-bottom: 2px solid transparent;
+    transition: border-bottom var(--transition-500);
+}
+.navLink a:hover {
+    border-bottom: 2px solid var(--gray-900);
+}
+.navLink a:focus {
+    border-bottom: 2px solid var(--gray-900);
+}
+
+.activeNavLink a {
+    color: var(--primary-text);
+}
+.activeNavLink a:hover {
+    border-bottom: 2px solid var(--primary-text);
+}
+.activeNavLink a:focus {
+    border-bottom: 2px solid var(--primary-text);
+}
