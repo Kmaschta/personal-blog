@@ -1,0 +1,14 @@
+.postHeader {
+    height: 415px;
+    position: relative;
+}
+
+.postHeader img {
+    opacity: 0.2;
+}
+
+.postTitleContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
