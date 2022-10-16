@@ -4,8 +4,14 @@ import { useEffect, useState } from 'react';
 import Card from '../components/Card/Card';
 
 import Container from '../components/Container/Container';
+import GitHub from '../components/icons/GitHub';
+import LinkedIn from '../components/icons/LinkedIn';
+import Twitter from '../components/icons/Twitter';
+import Keybase from '../components/icons/Keybase';
+
 import { getAllPosts } from '../lib/posts';
 import styles from './Homepage.module.css';
+import RSS from '../components/icons/RSS';
 
 const ADJECTIVES = [
     'reliable',
@@ -79,9 +85,32 @@ export default function Home({ latestPost: post }) {
                             </Link>
                             .
                         </p>
-                        <p>
-                            [LinkedIn] | [GitHub] | [Twitter] | [Keybase] |
-                            [RSS]
+                        <p className={styles.icons}>
+                            <Link href="https://www.linkedin.com/in/kmaschta/">
+                                <a>
+                                    <LinkedIn />
+                                </a>
+                            </Link>
+                            <Link href="https://github.com/Kmaschta">
+                                <a>
+                                    <GitHub />
+                                </a>
+                            </Link>
+                            <Link href="https://twitter.com/Kmaschta">
+                                <a>
+                                    <Twitter />
+                                </a>
+                            </Link>
+                            <Link href="https://keybase.io/kmaschta">
+                                <a>
+                                    <Keybase />
+                                </a>
+                            </Link>
+                            <Link href="https://keybase.io/kmaschta">
+                                <a>
+                                    <RSS />
+                                </a>
+                            </Link>
                         </p>
                     </Container>
                 </div>

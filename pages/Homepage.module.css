@@ -39,3 +39,23 @@
 .postHeading a {
     text-decoration: none;
 }
+
+.icons {
+    display: flex;
+}
+.icons a {
+    display: block;
+    width: auto;
+    margin-right: var(--spacing-4);
+}
+
+.icons svg {
+    width: var(--spacing-6);
+    height: var(--spacing-6);
+    fill: var(--primary-text);
+    transition: fill var(--transition-500);
+}
+
+.icons a:hover svg, .icons a:focus svg {
+    fill: var(--primary-default);
+}
