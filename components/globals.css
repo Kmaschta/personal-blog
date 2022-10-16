@@ -135,25 +135,7 @@ code {
   font-family: 'Inconsolata';
   border-radius: var(--border-radius-small);
 }
-code[class] {
-  display: block;
-  padding: var(--spacing-4);
-  overflow-x: auto;
-}
-blockquote {
-  background-color: var(--gray-200);
-  padding: var(--spacing-5);
-  border-left: 4px solid var(--primary-default);
-}
-blockquote p {
-  margin: 0;
-}
 
-img, code[class], blockquote {
-  margin: var(--spacing-6) 0;
-  border-radius: var(--border-radius-default);
-  box-shadow: var(--shadow-500);
-}
 
 a {
   color: var(--primary-text);

@@ -61,3 +61,23 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+
+.textContainer code[class] {
+    display: block;
+    padding: var(--spacing-4);
+    overflow-x: auto;
+}
+.textContainer blockquote {
+    background-color: var(--gray-200);
+    padding: var(--spacing-5);
+    border-left: 4px solid var(--primary-default);
+}
+.textContainer blockquote p {
+    margin: 0;
+}
+
+.textContainer img, .textContainer code[class], .textContainer blockquote {
+    margin: var(--spacing-6) 0;
+    border-radius: var(--border-radius-default);
+    box-shadow: var(--shadow-500);
+}
