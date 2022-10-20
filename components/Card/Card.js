@@ -13,14 +13,14 @@ function CardLink({ href, children }) {
     return children;
 }
 
-function Card({ href, className, children, image, title, tags }) {
+function Card({ href, children, image, title, tags }) {
     return (
         <CardLink href={href}>
-            <article className={styles.card + ' ' + className}>
+            <article className={styles.card}>
                 {image && <div className={styles.cardImage}>{image}</div>}
                 <div className={styles.cardContent}>
                     {title && <h3>{title}</h3>}
-                    <p>{children}</p>
+                    {children}
                     {tags && (
                         <div>
                             {(tags || []).map((tag) => (

@@ -141,18 +141,22 @@ export default function Home({ latestPost: post }) {
                                 />
                             }
                         >
-                            <p>{post.excerpt}</p>
-                            <div>
-                                <code>
-                                    {new Intl.DateTimeFormat('en-US', {
-                                        dateStyle: 'medium',
-                                    }).format(new Date(post.date))}
-                                </code>
-                                {(post.tags || []).length > 0 ? ' | ' : null}
-                                {(post.tags || []).map((tag) => (
-                                    <code key={tag}>#{tag}</code>
-                                ))}
-                            </div>
+                            <>
+                                <p>{post.excerpt}</p>
+                                <>
+                                    <code>
+                                        {new Intl.DateTimeFormat('en-US', {
+                                            dateStyle: 'medium',
+                                        }).format(new Date(post.date))}
+                                    </code>
+                                    {(post.tags || []).length > 0
+                                        ? ' | '
+                                        : null}
+                                    {(post.tags || []).map((tag) => (
+                                        <code key={tag}>#{tag}</code>
+                                    ))}
+                                </>
+                            </>
                         </Card>
                     </Container>
                 </div>
