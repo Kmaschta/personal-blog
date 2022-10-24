@@ -11,7 +11,8 @@ import Keybase from '../components/icons/Keybase';
 
 import { getAllPosts } from '../lib/posts';
 import styles from './Homepage.module.css';
-import RSS from '../components/icons/RSS';
+import Socials from '../components/Socials/Socials';
+import Experience from '../components/Experience/Experience';
 
 const ADJECTIVES = [
     'reliable',
@@ -45,7 +46,7 @@ export default function Home({ latestPost: post }) {
 
                         Array.from({ length: 4 }).forEach((_, j) => {
                             setTimeout(() => {
-                                setAdjective(j % 2 === 0 ? '|' : '');
+                                setAdjective(j % 2 === 0 ? '|' : null);
                             }, 500 * j);
                         });
 
@@ -69,7 +70,7 @@ export default function Home({ latestPost: post }) {
         <>
             <section className={styles.section}>
                 <div>
-                    <Container text>
+                    <Container text noPadding>
                         <p className={styles.preIntro}>Hi internet, I{"'"}m</p>
                         <h1 className={styles.name}>Kévin Maschtaler</h1>
                         <h2 className={styles.line}>
@@ -85,37 +86,30 @@ export default function Home({ latestPost: post }) {
                             </Link>
                             .
                         </p>
-                        <p className={styles.icons}>
-                            <Link href="https://www.linkedin.com/in/kmaschta/">
-                                <a>
-                                    <LinkedIn />
-                                </a>
-                            </Link>
-                            <Link href="https://github.com/Kmaschta">
-                                <a>
-                                    <GitHub />
-                                </a>
-                            </Link>
-                            <Link href="https://twitter.com/Kmaschta">
-                                <a>
-                                    <Twitter />
-                                </a>
-                            </Link>
-                            <Link href="https://keybase.io/kmaschta">
-                                <a>
-                                    <Keybase />
-                                </a>
-                            </Link>
-                            <Link href="https://keybase.io/kmaschta">
-                                <a>
-                                    <RSS />
-                                </a>
-                            </Link>
-                        </p>
+                        <Socials />
                     </Container>
                 </div>
             </section>
-            <section>
+            <section className={styles.section}>
+                <div>
+                    <Container text noPadding>
+                        <p className={styles.preIntro}>Experiences</p>
+                        <Experience
+                            company="Tint"
+                            companyLogo="/img/tint.png"
+                            position="Platform & Reliability Lead"
+                            date="Since May 2022"
+                        ></Experience>
+                        <Experience
+                            company="Marmelab"
+                            companyLogo="/img/marmelab.png"
+                            position="Software Engineer"
+                            date="October 2015 to May 2020 - 5 years"
+                        ></Experience>
+                    </Container>
+                </div>
+            </section>
+            <section className={styles.section}>
                 <div>
                     <Container text noPadding>
                         <div className={styles.postHeading}>

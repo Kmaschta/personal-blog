@@ -1,0 +1,29 @@
+.socials {
+    display: flex;
+}
+.socials a {
+    display: block;
+    width: auto;
+    line-height: var(--spacing-6);
+    margin-right: var(--spacing-4);
+}
+
+.socials svg {
+    width: var(--spacing-6);
+    height: var(--spacing-6);
+    fill: var(--primary-text);
+    transition: fill var(--transition-500);
+}
+
+.socials a:hover svg, .socials a:focus svg {
+    fill: var(--primary-default);
+}
+
+.small a {
+    margin-right: var(--spacing-3);
+    line-height: var(--spacing-4);
+}
+.small svg {
+    width: var(--spacing-4);
+    height: var(--spacing-4);
+}

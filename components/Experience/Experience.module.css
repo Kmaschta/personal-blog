@@ -1,0 +1,26 @@
+.experience {
+    margin-bottom: var(--spacing-5);   
+}
+
+.experience h2 {
+    display: inline;
+    margin: 0;
+    font-size: 22px;
+    color: var(--gray-800);
+}
+
+.experience h3 {
+    display: inline;
+    margin: 0;
+    font-size: 20px;
+    color: var(--gray-800);
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.company {
+    margin-right: var(--spacing-5);
+}
