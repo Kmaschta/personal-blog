@@ -145,4 +145,6 @@ a:focus, a:hover {
   color: var(--primary-default);
 }
 
-
+dl dd {
+  font-weight: bolder;
+}

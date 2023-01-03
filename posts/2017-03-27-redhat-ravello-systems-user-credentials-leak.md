@@ -2,6 +2,7 @@
 layout: post
 author: Kévin Maschtaler
 title: "Red Hat's Ravello Systems user credentials leak"
+excerpt: "I found the credentials of a Red Hat solution architect, and was able to log into their Ravello Systems account. It's a good opportunity to learn something!"
 date: '2017-03-27 12:00:00'
 lang: en
 image: /content/redhat-ravello-systems-user-credentials-leak/hackerman.png

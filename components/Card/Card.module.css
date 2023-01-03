@@ -63,3 +63,12 @@
 .cardContent h3 {
     margin-top: 0;
 }
+
+.cardContent code {
+    font-size: 16px;
+    padding: var(--spacing-1) var(--spacing-1);
+
+}
+.cardContent code:first-of-type {
+    padding-left: 0;
+}

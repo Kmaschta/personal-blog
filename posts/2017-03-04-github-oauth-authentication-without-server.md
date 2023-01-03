@@ -2,6 +2,7 @@
 layout: post
 author: Kévin Maschtaler
 title: 'GitHub Oauth authentication for SPA without server'
+excerpt: 'For a Single-Page Application (SPA), you often need an authentication from a trusted service like Google, Facebook, Twitter, Github and so on. Most of the time, you need a server with an API to handle this feature. But what if you could avoid it?'
 date: '2017-03-04 12:00:00'
 image: /content/github-oauth-authentication-without-server/authorization_code_grant.png
 tags:
