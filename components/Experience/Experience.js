@@ -2,27 +2,36 @@ import Image from 'next/image';
 
 import styles from './Experience.module.css';
 
-function Experience({ company, companyLogo, position, date, children }) {
+export function Experience({ position, date, company, children }) {
     return (
         <article className={styles.experience}>
-            <div className={styles.header}>
-                <div className={styles.company}>
-                    <Image
-                        src={companyLogo}
-                        alt=""
-                        width={60}
-                        height={60}
-                        objectFit="contain"
-                    />
-                </div>
-                <div>
-                    <h2>{position}</h2> @ <h3>{company}</h3>
-                    <div>{date}</div>
-                </div>
-            </div>
-            <div>{children}</div>
+            <h2>{position}</h2> <h3>{company}</h3>
+            <div className={styles.experienceDate}>{date}</div>
+            {children}
         </article>
     );
 }
 
-export default Experience;
+function Company({ name, companyLogo, children }) {
+    return (
+        <div className={styles.company}>
+            <div className={styles.pane}>
+                <div className={styles.logo}>
+                    <Image
+                        src={companyLogo}
+                        alt=""
+                        width={42}
+                        height={42}
+                        objectFit="contain"
+                    />
+                </div>
+                <div>
+                    <h3>{name}</h3>
+                </div>
+            </div>
+            <div>{children}</div>
+        </div>
+    );
+}
+
+export default Company;

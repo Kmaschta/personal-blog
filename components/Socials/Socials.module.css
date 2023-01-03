@@ -20,10 +20,10 @@
 }
 
 .small a {
-    margin-right: var(--spacing-3);
-    line-height: var(--spacing-4);
+    margin-right: var(--spacing-4);
+    line-height: var(--spacing-5);
 }
 .small svg {
-    width: var(--spacing-4);
-    height: var(--spacing-4);
+    width: var(--spacing-5);
+    height: var(--spacing-5);
 }

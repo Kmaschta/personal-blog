@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
         <>
             <Head>
                 <title>Kévin Maschtaler | Personal blog</title>
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
             <main>

@@ -2,7 +2,15 @@
     min-height: 50vh;
     display: flex;
     align-items: center;
+    
 }
+
+@media (max-width: 700px) {
+    .section {
+        margin-bottom: var(--spacing-6);
+    }
+}
+
 .section > div {
     flex: 1 0 0;
 }
@@ -31,13 +39,9 @@
     min-width: 6px;
 }
 
-.postHeading {
-    display: flex;
-    justify-content: space-between;
-}
 .postHeading h3 {
     margin: 0;
 }
-.postHeading a {
-    text-decoration: none;
+.postFooter {
+    text-align: right;
 }
