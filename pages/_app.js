@@ -10,6 +10,10 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 <title>Kévin Maschtaler | Software Engineering</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="description"
+                    content="Kévin Maschtaler's personal website and blog. Kévin is a software engineer specialized in engineering operations for high-growth startups."
+                />
             </Head>
             <Header />
             <main>

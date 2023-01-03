@@ -290,7 +290,9 @@ export default function Home({ latestPost: post }) {
                     </Container>
                     <Container noPadding>
                         <div className={styles.postFooter}>
-                            <Link href="/blog">Read more</Link>
+                            <Link href="/blog">
+                                <a>More blog posts</a>
+                            </Link>
                         </div>
                     </Container>
                 </div>

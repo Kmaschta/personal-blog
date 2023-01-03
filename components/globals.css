@@ -4,6 +4,7 @@
        url('/fonts/Oxygen/oxygen-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Oxygen';
@@ -11,6 +12,7 @@
        url('/fonts/Oxygen/oxygen-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Oxygen';
@@ -18,6 +20,7 @@
        url('/fonts/Oxygen/oxygen-light-webfont.woff') format('woff');
   font-weight: lighter;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +29,7 @@
        url('/fonts/Exo2/exo2-variablefont_wght-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Exo2';
@@ -33,6 +37,7 @@
        url('/fonts/Exo2/exo2-italic-variablefont_wght-webfont.woff') format('woff');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -41,6 +46,7 @@
        url('/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
