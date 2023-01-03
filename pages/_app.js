@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Kévin Maschtaler | Personal blog</title>
+                <title>Kévin Maschtaler | Software Engineering</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />

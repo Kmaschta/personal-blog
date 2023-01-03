@@ -37,7 +37,14 @@ const SLIDES = [
                 today.
                 <br />
                 <br />
-                Read more about the migration on this blog posts serie and talk
+                Read more about the migration on this{' '}
+                <a
+                    href="https://marmelab.com/blog/2021/01/07/migration-continue-chez-arte-pourquoi.html"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    blog posts serie and talk
+                </a>{' '}
                 (in french)
             </>
         ),
@@ -71,13 +78,23 @@ const SLIDES = [
         image: CnrsLogo,
         content: (
             <>
-                ARTE is a publicly-financed media by France and GermanyWe
-                revamped the whole website to a more modern design still used
-                today.
+                The CNRS is the French National Centre for Scientific Research.
                 <br />
                 <br />
-                Read more about the migration on this blog posts serie and talk
-                (in french)
+                For them, we released a static web site generator to publish
+                papers and data in digest, readable, and searchable way using
+                web semantic and vizualization tools.
+                <br />
+                <br />
+                The library,{' '}
+                <a
+                    href="https://github.com/Inist-CNRS/lodex"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    Lodex
+                </a>
+                , is open source and available on GitHub.
             </>
         ),
     },

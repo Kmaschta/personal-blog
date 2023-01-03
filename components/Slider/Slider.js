@@ -24,7 +24,7 @@ function Slider({ slides }) {
         if (pristine) {
             timeout = setTimeout(() => {
                 setSlide((currentSlide + 1) % slides.length);
-            }, 5000);
+            }, 10000);
         }
 
         return () => {
