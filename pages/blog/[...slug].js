@@ -24,6 +24,8 @@ export default function Post({ content, post }) {
                     alt=""
                     layout="fill"
                     objectFit="cover"
+                    placeholder="blur"
+                    blurDataURL={post.blurImage}
                 />
                 <div className={styles.postTitleContainer}>
                     <Container text>
@@ -54,7 +56,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
     const slug = context.params.slug.join('-');
-    const { content, metadata } = getPostBySlug(slug);
+    const { content, metadata } = await getPostBySlug(slug);
 
     return {
         props: { content, post: metadata },

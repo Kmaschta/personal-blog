@@ -281,6 +281,8 @@ export default function Home({ latestPost: post }) {
                                     alt=""
                                     layout="fill"
                                     objectFit="cover"
+                                    placeholder="blur"
+                                    blurDataURL={post.blurImage}
                                 />
                             }
                         >
@@ -316,7 +318,7 @@ export default function Home({ latestPost: post }) {
 }
 
 export async function getStaticProps() {
-    const posts = getAllPosts().map((post) => ({
+    const posts = (await getAllPosts()).map((post) => ({
         ...post,
         date: new Date(post.date),
     }));

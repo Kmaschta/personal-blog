@@ -23,6 +23,8 @@ export default function Blog({ postsByYear }) {
                                         alt=""
                                         layout="fill"
                                         objectFit="cover"
+                                        placeholder="blur"
+                                        blurDataURL={post.blurImage}
                                     />
                                 }
                             >
@@ -49,7 +51,7 @@ export default function Blog({ postsByYear }) {
 }
 
 export async function getStaticProps() {
-    const posts = getAllPosts().map((post) => ({
+    const posts = (await getAllPosts()).map((post) => ({
         ...post,
         date: new Date(post.date),
     }));
