@@ -8,6 +8,9 @@ import Container from '../../components/Container/Container';
 
 import { getAllPostSlugs, getPostBySlug } from '../../lib/posts';
 import styles from './Post.module.css';
+import Head from 'next/head';
+
+const URL = process.env.NEXT_PUBLIC_URL;
 
 export default function Post({ content, post }) {
     useEffect(() => {
@@ -18,6 +21,50 @@ export default function Post({ content, post }) {
 
     return (
         <>
+            <Head>
+                <title>{post.title} | Kévin Maschtaler</title>
+                {post.canonical && (
+                    <link rel="canonical" href={post.canonical} />
+                )}
+                <meta
+                    property="og:title"
+                    content={`${post.title} | Kévin Maschtaler`}
+                />
+                <meta name="description" content={post.excerpt} />
+                <meta property="og:url" content={URL + post.url} />
+                <meta property="og:image" content={URL + post.image} />
+                <meta property="og:description" content={post.excerpt} />
+
+                <meta
+                    name="twitter:title"
+                    content={`${post.title} | Kévin Maschtaler`}
+                />
+                <meta name="twitter:description" content={post.excerpt} />
+                <meta name="twitter:image" content={URL + post.image} />
+
+                <meta property="og:type" content="article" />
+                <meta property="og:article:author:first_name" content="Kévin" />
+                <meta
+                    property="og:article:author:last_name"
+                    content="Maschtaler"
+                />
+                <meta
+                    property="og:article:author:username"
+                    content="Kmaschta"
+                />
+                <meta property="og:article:author:gender" content="male" />
+                <meta
+                    property="og:article:published_time"
+                    content={post.date}
+                />
+                {(post.tags || []).map((tag) => (
+                    <meta
+                        key={tag}
+                        property="og:article:author:tag"
+                        content={tag}
+                    />
+                ))}
+            </Head>
             <div className={styles.postHeader}>
                 <Image
                     src={post.image}
