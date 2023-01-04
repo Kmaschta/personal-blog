@@ -156,8 +156,22 @@ export default function Home({ latestPost: post }) {
         };
     }, [setAdjective]);
 
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const particleJS = require('particles.js');
+            particlesJS.load('particles-js', 'particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        }
+    }, []);
+
     return (
-        <>
+        <div className={styles.container}>
+            <div className={styles.particles}>
+                <Container>
+                    <div id="particles-js"></div>
+                </Container>
+            </div>
             <section className={styles.section}>
                 <div>
                     <Container text noPadding>
@@ -297,7 +311,7 @@ export default function Home({ latestPost: post }) {
                     </Container>
                 </div>
             </section>
-        </>
+        </div>
     );
 }
 

@@ -32,11 +32,11 @@ function Socials({ small }) {
                     <Keybase />
                 </a>
             </Link>
-            <Link href="https://keybase.io/kmaschta">
+            {/*<Link href="https://keybase.io/kmaschta">
                 <a>
                     <RSS />
                 </a>
-            </Link>
+            </Link>*/}
         </div>
     );
 }
