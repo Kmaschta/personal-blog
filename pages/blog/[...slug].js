@@ -23,8 +23,10 @@ export default function Post({ content, post }) {
         <>
             <Head>
                 <title>{post.title} | Kévin Maschtaler</title>
-                {post.canonical && (
+                {post.canonical ? (
                     <link rel="canonical" href={post.canonical} />
+                ) : (
+                    <link rel="canonical" href={URL + post.url} />
                 )}
                 <meta
                     property="og:title"
@@ -32,7 +34,6 @@ export default function Post({ content, post }) {
                 />
                 <meta property="og:url" content={URL + post.url} />
                 <meta name="description" content={post.excerpt} />
-                <meta property="og:url" content={URL + post.url} />
                 <meta property="og:image" content={URL + post.image} />
                 <meta property="og:description" content={post.excerpt} />
 
