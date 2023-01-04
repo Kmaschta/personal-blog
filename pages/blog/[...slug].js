@@ -30,6 +30,7 @@ export default function Post({ content, post }) {
                     property="og:title"
                     content={`${post.title} | Kévin Maschtaler`}
                 />
+                <meta property="og:url" content={URL + post.url} />
                 <meta name="description" content={post.excerpt} />
                 <meta property="og:url" content={URL + post.url} />
                 <meta property="og:image" content={URL + post.image} />
