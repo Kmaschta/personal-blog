@@ -16,6 +16,13 @@ import ShotgunLogo from '../public/img/shotgun.png';
 import CloudLogo from '../public/img/1859.png';
 import CnrsLogo from '../public/img/cnrs.png';
 import WallixLogo from '../public/img/wallix.png';
+import Head from 'next/head';
+
+const TITLE = 'Kévin Maschtaler | Software Engineering';
+const DESCRIPTION =
+    "Kévin Maschtaler's personal website and blog. Kévin is a software engineer specialized in engineering operations for high-growth startups.";
+const URL = process.env.NEXT_PUBLIC_URL;
+const IMAGE = URL + '/presentation.png';
 
 const ADJECTIVES = [
     'reliable',
@@ -167,6 +174,22 @@ export default function Home({ latestPost: post }) {
 
     return (
         <div className={styles.container}>
+            <Head>
+                <meta name="description" content={DESCRIPTION} />
+
+                <meta property="og:title" content={TITLE} />
+                <meta property="og:url" content={URL} />
+                <meta property="og:image" content={IMAGE} />
+                <meta property="og:description" content={DESCRIPTION} />
+                <meta property="og:site_name" content={TITLE} />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:creator" content="@Kmaschta" />
+                <meta name="twitter:site" content={URL} />
+                <meta name="twitter:title" content={TITLE} />
+                <meta name="twitter:description" content={DESCRIPTION} />
+                <meta name="twitter:image" content={IMAGE} />
+            </Head>
             <div className={styles.particles}>
                 <Container>
                     <div id="particles-js"></div>
