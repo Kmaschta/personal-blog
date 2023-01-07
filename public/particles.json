@@ -45,11 +45,12 @@
             "distance": 150,
             "color": "#ADC6EB",
             "opacity": 1,
-            "width": 1
+            "width": 1,
+            "color_rgb_line": {}
         },
         "move": {
             "enable": true,
-            "speed": 2,
+            "speed": 1,
             "direction": "none",
             "random": true,
             "straight": false,
