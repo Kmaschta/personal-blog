@@ -11,6 +11,7 @@ tags:
     - js
     - performance
     - devops
+    - sre
 ---
 
 Fixing memory leaks may not be not the shiniest skill on a CV, but when things go wrong on production, it's better to be prepared!

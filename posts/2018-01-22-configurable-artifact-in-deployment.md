@@ -8,6 +8,7 @@ image: /content/configurable-artifact-in-deployment/partial-deployment-pipeline.
 canonical: https://marmelab.com/blog/2018/01/22/configurable-artifact-in-deployment.html
 tags:
     - devops
+    - sre
 ---
 
 When a project team grows, feature deployments become more frequent. Automating these deployments then becomes critical to optimize the development workflow. In my opinion, the best practice is artifact-based deployment, a lifesaver process that I use as much as possible. It's quite popular, and part of the <a href="https://12factor.net/config">The Twelve-Factor App</a> pattern.

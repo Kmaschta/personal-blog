@@ -8,6 +8,7 @@ image: /content/site-reliability-engineering/sre-large.jpg
 canonical: https://marmelab.com/blog/2018/05/24/site-reliability-engineering.html
 tags:
     - devops
+    - sre
     - book-review
     - performance
 ---

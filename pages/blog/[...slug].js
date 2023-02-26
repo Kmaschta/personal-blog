@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Head from 'next/head';
 import Image from 'next/image';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/a11y-dark.css';
@@ -8,7 +9,6 @@ import Container from '../../components/Container/Container';
 
 import { getAllPostSlugs, getPostBySlug } from '../../lib/posts';
 import styles from './Post.module.css';
-import Head from 'next/head';
 
 const URL = process.env.NEXT_PUBLIC_URL;
 
