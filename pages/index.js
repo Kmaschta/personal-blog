@@ -224,7 +224,7 @@ export default function Home({ latestPost: post }) {
                         <p className={styles.preIntro}>Experiences</p>
                         <Company name="Tint" companyLogo="/img/tint.png">
                             <Experience
-                                position="Engineering Manager, CORE"
+                                position="Engineering Manager"
                                 date="Since 2023"
                                 company="Tint"
                             >
