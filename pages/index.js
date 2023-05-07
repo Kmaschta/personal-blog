@@ -207,7 +207,8 @@ export default function Home({ latestPost: post }) {
                             Software Engineer for 10 years, I specialized in
                             Platform and Reliability.
                             <br />
-                            Currently, I’m leading the Engineering Operations at{' '}
+                            Currently, I’m managing the Engineering Operations
+                            at{' '}
                             <Link href="https://www.tint.ai/">
                                 <a>Tint</a>
                             </Link>
@@ -223,8 +224,18 @@ export default function Home({ latestPost: post }) {
                         <p className={styles.preIntro}>Experiences</p>
                         <Company name="Tint" companyLogo="/img/tint.png">
                             <Experience
+                                position="Engineering Manager, CORE"
+                                date="Since 2023"
+                                company="Tint"
+                            >
+                                <p>
+                                    Manager of the Critical Operations and
+                                    Reliability Engineering (CORE) at Tint.
+                                </p>
+                            </Experience>
+                            <Experience
                                 position="Staff Software Engineer, Platform & Reliability Lead"
-                                date="Since 2022"
+                                date="1 year - 2022 to 2023"
                                 company="Tint"
                             >
                                 <p>
@@ -273,8 +284,8 @@ export default function Home({ latestPost: post }) {
                             >
                                 <>
                                     <p>
-                                        Senior Software Engineer for a Web
-                                        Agency.
+                                        Senior Software Engineer for an
+                                        innovative web agency.
                                         <br />
                                         Worked on various innovation projects,
                                         for startups to french medias.
