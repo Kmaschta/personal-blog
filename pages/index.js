@@ -284,11 +284,11 @@ export default function Home({ latestPost: post }) {
                             >
                                 <>
                                     <p>
-                                        Senior Software Engineer for an
-                                        innovative web agency.
+                                        Senior Software Engineer for a web
+                                        agency.
                                         <br />
                                         Worked on various innovation projects,
-                                        for startups to french medias.
+                                        from startups to french medias.
                                     </p>
                                     <Slider slides={SLIDES} />
                                 </>
