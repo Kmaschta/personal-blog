@@ -11,6 +11,11 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 <title>{TITLE}</title>
                 <link rel="icon" href="/favicon.ico" />
+                <script
+                    async
+                    src="https://analytics.umami.is/script.js"
+                    data-website-id="f29e5512-8329-4dd8-b9b4-43eb0d37d825"
+                ></script>
             </Head>
             <Header />
             <main>
